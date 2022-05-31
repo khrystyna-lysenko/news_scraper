@@ -9,7 +9,7 @@ html_doc = requests.get('https://news.ycombinator.com/')
 soup = BeautifulSoup(html_doc.content, 'html.parser')
 
 
-article_list = soup.find_all('body > div.main_content > div > div.container_sub_news_list > div.container_sub_news_list_wrapper.mode1 > div:nth-child(1) > div.article_content > div.article_header')
+article_list = soup.find_all('')
 
 for a in article_list:
 
